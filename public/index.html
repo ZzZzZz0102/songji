@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#345847">
+  <meta name="description" content="重庆永川松溉古镇网上导览：探访文化遗存、认识传统手艺、选购伴手礼，规划属于自己的古镇之旅。">
+  <title>松溉古镇 · 云览松溉 数启乡兴</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=compact-20261020">
+  <link rel="stylesheet" href="services.css?v=compact-20261020">
+  <link rel="stylesheet" href="photos.css">
+  <link rel="stylesheet" href="food.css">
+  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="platform.css?v=retained-navigation-20261018">
+  <link rel="stylesheet" href="stays.css?v=20261018">
+  <link rel="stylesheet" href="business.css?v=1">
+  <script src="assets/lucide.js" defer></script>
+  <script src="app.js?v=compact-20261020" defer></script>
+  <script src="photos.js" defer></script>
+  <script src="food.js" defer></script>
+  <script src="services.js?v=compact-20261020" defer></script>
+  <script src="guide.js" defer></script>
+  <script src="platform.js?v=compact-20261020" defer></script>
+  <script src="stays.js?v=20261018" defer></script>
+  <script src="vendor/qrcode.js" defer></script>
+  <script src="business.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳转至主要内容</a>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="松溉古镇首页"><span class="seal">松<br>溉</span><span><b>松溉古镇</b><small>SONGJI ANCIENT TOWN</small></span></a>
+    <nav aria-label="主导航" id="navigation">
+      <a href="#home" data-page="home">首页</a><a href="#photos" data-page="photos">实景相册</a><a href="#sights" data-page="sights">景点介绍</a><a href="#food" data-page="food">松溉美食</a><a href="#heritage" data-page="heritage">松溉遗珍</a><a href="#shop" data-page="shop">文创购买</a><a href="#routes" data-page="routes">游览路线</a><a href="#guide" data-page="guide">智慧导览</a><a href="#visit" data-page="visit">出行服务</a><a href="#records" data-page="records">我的行程</a>
+    </nav>
+    <div class="header-tools"><button class="icon-btn" id="search-open" title="搜索古镇" aria-label="搜索古镇"><i data-lucide="search"></i></button><button class="icon-btn cart-trigger" title="购物袋" aria-label="打开购物袋"><i data-lucide="shopping-bag"></i><span class="cart-count" hidden>0</span></button><button class="icon-btn mobile-menu" id="menu-toggle" aria-label="展开导航" aria-expanded="false"><i data-lucide="menu"></i></button></div>
+  </header>
+  <nav class="digital-services-nav" aria-label="数字服务">
+    <div class="wrap"><a href="#foundation" data-page="foundation"><i data-lucide="database"></i><span>数字底座</span></a><a href="#live" data-page="live"><i data-lucide="radio"></i><span>直播助农</span></a><a href="#agent" data-page="agent"><i data-lucide="bot"></i><span>智能 Agent</span></a><a href="#booking" data-page="booking"><i data-lucide="calendar-check"></i><span>体验预约</span></a><a href="#digital" data-page="digital"><i data-lucide="box"></i><span>三维与档案</span></a><a href="#stats" data-page="stats"><i data-lucide="chart-no-axes-column-increasing"></i><span>数据看板</span></a><a href="#plan" data-page="plan"><i data-lucide="layout-template"></i><span>项目方案</span></a><a href="#team" data-page="team"><i data-lucide="award"></i><span>团队成果</span></a><a href="#scan" data-page="scan"><i data-lucide="qr-code"></i><span>扫码互动</span></a><a href="#account" data-page="account" id="business-account"><i data-lucide="user-round"></i><span>登录</span></a></div>
+  </nav>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-main wrap"><div><a href="#home" class="footer-brand">松溉古镇<span class="mini-seal">永川</span></a><p>一品古镇 · 十里老街 · 万里长江</p></div><div class="footer-links"><a href="#sights">寻古探幽</a><a href="#heritage">手艺传承</a><a href="#routes">漫游计划</a><a href="#contact">留下心声</a></div><div class="footer-location"><span>重庆市 · 永川区 · 松溉镇</span><a href="https://uri.amap.com/search?keyword=%E6%9D%BE%E6%BA%89%E5%8F%A4%E9%95%87&city=%E9%87%8D%E5%BA%86" target="_blank" rel="noopener">前往古镇 <i data-lucide="arrow-up-right"></i></a></div></div>
+    <div class="footer-bottom wrap"><span>云览松溉 数启乡兴 · 非官方文化导览</span><a href="#contact">联系我们</a><a href="#workbench">业务工作台</a><a href="#operations">本机草稿</a><button class="text-btn" id="sources-open">资料与图片来源 <i data-lucide="arrow-up-right"></i></button><span>© 2026 松溉古镇网上导览</span></div>
+  </footer>
+  <dialog id="detail-dialog" class="detail-dialog"><button class="icon-btn close-dialog" aria-label="关闭"><i data-lucide="x"></i></button><div id="detail-content"></div></dialog>
+  <dialog id="cart-dialog" class="cart-dialog"><div class="dialog-heading"><div><span class="eyebrow">A LITTLE SONGJI TO TAKE HOME</span><h2>我的购物袋 <span id="cart-title-count"></span></h2></div><button class="icon-btn close-dialog" aria-label="关闭购物袋"><i data-lucide="x"></i></button></div><p class="notice">商品为参考选品与建议零售价，尚未接入商家、库存或在线支付。</p><div id="cart-content"></div><div class="action-row"><button class="btn secondary" data-save-purchase><i data-lucide="save"></i>保存购买意向</button><a href="#records" data-close class="text-btn">我的记录 <i data-lucide="arrow-right"></i></a></div></dialog>
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-heading"><h2>寻找一处心动</h2><button class="icon-btn close-dialog" aria-label="关闭搜索"><i data-lucide="x"></i></button></div><div class="search-field"><i data-lucide="search"></i><input id="search-input" type="search" placeholder="搜索景点、手艺、伴手礼…" aria-label="搜索景点、手艺、伴手礼"></div><div id="search-results"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-title" aria-describedby="photo-description"><div class="photo-viewer-toolbar"><div class="photo-viewer-actions"><button class="icon-btn" data-photo-step="-1" title="上一张" aria-label="上一张"> <i data-lucide="chevron-left"></i></button><span id="photo-counter" class="photo-counter" aria-live="polite"></span><button class="icon-btn" data-photo-step="1" title="下一张" aria-label="下一张"><i data-lucide="chevron-right"></i></button></div><div class="photo-viewer-actions"><a id="photo-new-tab" class="icon-btn" target="_blank" rel="noopener" title="单独打开大图" aria-label="单独打开大图"><i data-lucide="external-link"></i></a><a id="photo-download" class="icon-btn" download title="下载照片" aria-label="下载照片"><i data-lucide="download"></i></a><button class="icon-btn close-dialog" title="关闭照片" aria-label="关闭照片"><i data-lucide="x"></i></button></div></div><figure class="photo-stage"><img id="photo-full" alt=""><figcaption class="photo-viewer-caption"><h2 id="photo-title"></h2><p id="photo-description"></p><p id="photo-credit" class="photo-credit"></p><button id="photo-sight-link" class="text-btn" hidden></button></figcaption></figure></dialog>
+  <button id="back-top" class="icon-btn back-top" title="返回顶部" aria-label="返回顶部" hidden><i data-lucide="arrow-up"></i></button>
+</body>
+</html>

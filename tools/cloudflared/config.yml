@@ -1,0 +1,9 @@
+tunnel: 91a26f58-ca8d-4587-bbec-98036cda4218
+credentials-file: /home/user/.cloudflared/91a26f58-ca8d-4587-bbec-98036cda4218.json
+
+ingress:
+  - hostname: songgai.top
+    service: http://127.0.0.1:8787
+  - hostname: "*.songgai.top"
+    service: http://127.0.0.1:8787
+  - service: http_status:404

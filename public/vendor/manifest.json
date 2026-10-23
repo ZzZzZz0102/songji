@@ -1,0 +1,42 @@
+[
+  {
+    "file": "qrcode.js",
+    "url": "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js",
+    "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  {
+    "file": "qrcode-README.md",
+    "url": "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/README.md",
+    "sha256": "e2e665eb157725a8543c37951b064f58c564eb38f8507bf34309c39f58db6003"
+  },
+  {
+    "file": "three.module.js",
+    "url": "https://unpkg.com/three@0.160.1/build/three.module.min.js",
+    "sha256": "3e690ac7d180b0aadf0891bea39eec643e29e2d3e75c99b18689518665f69ba6"
+  },
+  {
+    "file": "three-LICENSE.txt",
+    "url": "https://cdn.jsdelivr.net/npm/three@0.160.1/LICENSE",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+  },
+  {
+    "file": "gaussian-splats-3d.module.js",
+    "url": "https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/build/gaussian-splats-3d.module.js",
+    "sha256": "f273394134c9174e49bf42bb4ea0945caaad4fdd63023b8996cc6cd248f52a6b"
+  },
+  {
+    "file": "gaussian-LICENSE.txt",
+    "url": "https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/LICENSE",
+    "sha256": "eaf88512a83fc007481fee3c10b6b6e3dbab64bd6d0d3c64416decf86dbc9440"
+  },
+  {
+    "file": "model-viewer.min.js",
+    "url": "https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js",
+    "sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf"
+  },
+  {
+    "file": "model-viewer-LICENSE.txt",
+    "url": "https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

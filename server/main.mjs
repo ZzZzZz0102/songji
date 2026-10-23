@@ -1,0 +1,10 @@
+import path from 'node:path';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { createApplication } from './app.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+if(fs.existsSync(path.join(root,'.env')))process.loadEnvFile(path.join(root,'.env'));
+const port=Number(process.env.PORT || 8787),host=process.env.HOST || '127.0.0.1';
+const app=createApplication({root,dataDir:path.resolve(root,process.env.DATA_DIR || 'data'),origin:process.env.APP_ORIGIN || `http://127.0.0.1:${port}`,llmBase:process.env.LLM_BASE_URL,llmKey:process.env.LLM_API_KEY,llmModel:process.env.LLM_MODEL,llmMaxCalls:Number(process.env.LLM_MAX_CALLS_PER_24H || 0),trustCloudflare:process.env.TRUST_CLOUDFLARE_PROXY==='1',webhook:process.env.NOTIFY_WEBHOOK_URL,webhookSecret:process.env.NOTIFY_WEBHOOK_SECRET});
+app.server.listen(port,host,()=>console.log(`Songgai: http://${host}:${port}`));
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>app.close().then(()=>process.exit(0)));

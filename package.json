@@ -1,0 +1,12 @@
+{
+  "name": "songgai-business-platform",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node server/main.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "catalog": "node tools/build-catalog.mjs",
+    "admin": "node tools/create-admin.mjs"
+  }
+}
